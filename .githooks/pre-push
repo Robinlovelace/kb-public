@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Audit the generated tree before it leaves. Logic lives in local_kb/hooks.
+exec "${LOCAL_KB:-$HOME/github/robinlovelace/local_kb}/hooks/public-pre-push" "$@"
